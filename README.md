@@ -1,3 +1,11 @@
+# Stempel Tag Writer
+
+This fork of [AndroidCrypto/Ntag424SdmFeature](https://github.com/AndroidCrypto/Ntag424SdmFeature) sets up the NTAG 424 DNA tags for the stations of [stempel](https://github.com/asta-dhbw/stempel). The app opens on `StempelActivity`. Enter the tag URL, the tag key and the master key, then hold the tag against the phone. For the full procedure, see `docs/running-an-event.md` in stempel.
+
+To build the app, run `./gradlew assembleDebug` with JDK 21. To install it, enable USB debugging, set the USB mode of the phone to file transfer, and run `adb install app/build/outputs/apk/debug/app-debug.apk`. `StempelTemplateTest` makes sure that the offsets of the URL are correct.
+
+The other screens of the original app stay in the code, but the launcher does not show them. The text below is the README of the original app.
+
 # NTAG 424 DNA Secure Dynamic Messaging ("SDM") Feature
 
 This is the accompanying app to my articles **Demystify the Secure Dynamic Message with NTAG 424 DNA NFC tags (Android/Java) Parts 1 and 2**,
